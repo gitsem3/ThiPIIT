@@ -153,10 +153,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\MarketsController.cs" />
+    <Compile Include="Areas\CoinController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MarketController.cs" />
+    <Compile Include="Data\MyDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Coin.cs" />
+    <Compile Include="Models\Market.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -198,7 +205,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Areas\Admin\Views\Coin\" />
+    <Folder Include="Areas\Admin\Views\Markets\" />
+    <Folder Include="Areas\Data\" />
+    <Folder Include="Views\Coin\" />
+    <Folder Include="Views\Market\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
